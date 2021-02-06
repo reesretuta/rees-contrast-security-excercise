@@ -1,0 +1,53 @@
+@import "../styles/utility.scss";
+
+#cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    @include box-shadow(1px, 1px, 10px, $lightGrey);
+    @include rounded(20px);
+    transition: box-shadow 0.3s ease-in-out;
+    width: 300px;
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    h1{
+        height: 72px;
+        margin-top: 0;
+    }
+    .stat{
+        margin-bottom: 20px;
+        h3 {
+            margin:0;
+        }
+        .value {
+            display: inline-block;
+        }
+    }
+
+    .earnings{
+        height: 30px;
+        width: 100%;
+        background-color: $lightGrey;
+        .bar {
+            background: $green;
+            height: 100%;
+        }
+    }
+
+    .deleteCard{
+        color: $red;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        text-align: center;
+        cursor: pointer;
+        div{
+            font-size: 10px;
+        }
+    }
+}
+
