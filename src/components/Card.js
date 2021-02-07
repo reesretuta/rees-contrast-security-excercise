@@ -12,7 +12,6 @@ export const Card = ({ stock, deleteCard }) => {
           deleteCard(stock.stockData.Symbol);
         }}>
         <span>&#10005;</span>
-        <div>Remove</div>
       </div>
       <h1>{stock.stockData['Name']}</h1>
       <h2>Stats</h2>

@@ -3,6 +3,7 @@
 #cards {
     display: flex;
     flex-flow: row wrap;
+    margin-top: 50px;
 }
 
 .card {
@@ -12,12 +13,13 @@
     width: 300px;
     position: relative;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     box-sizing: border-box;
     h1{
         height: 72px;
         margin-top: 0;
     }
+
     .stat{
         margin-bottom: 20px;
         h3 {
@@ -41,13 +43,10 @@
     .deleteCard{
         color: $red;
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 12px;
+        right: 12px;
         text-align: center;
         cursor: pointer;
-        div{
-            font-size: 10px;
-        }
     }
 }
 

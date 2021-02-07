@@ -6,7 +6,7 @@
     margin: 100px auto;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
-    @include respond-above(lg) {
-        width: 1440px;
+    @include respond-above(md) {
+        width: 992px;
     }
 }
