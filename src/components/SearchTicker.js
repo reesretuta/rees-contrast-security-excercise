@@ -38,7 +38,6 @@ export const SearchTicker = ({addCard}) => {
 
   return (
     <Search
-      data-testid='searchInput'
       input={{ icon: 'search', iconPosition: 'left' }}
       loading={loading}
       onResultSelect={handleResultSelect}
