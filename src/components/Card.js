@@ -4,7 +4,7 @@ import './Card.scss';
 export const Card = ({ stock, deleteCard }) => {
   const eps = parseFloat(stock.stockData['EPS']);
   const epsTotal = parseFloat(stock.stockData['EPS-total']);
-  const epsWidth = ((eps / epsTotal) * 100) + '%';
+  const epsWidth = eps < 0 ? 0 : ((eps / epsTotal) * 100) + '%';
 
   return (
     <div className="card">

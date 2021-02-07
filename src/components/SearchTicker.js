@@ -5,6 +5,7 @@ import { getSimilarTickers } from '../utils/api';
 export const SearchTicker = ({addCard}) => {
   const [tickers, setTickers] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [keyPressTimes, addKeyPress] = useState([]);
 
   const handleSearchChange = async (e, { name, value }) => {
     if(!value) {
