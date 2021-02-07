@@ -15,6 +15,7 @@ const wrapperMount = (node, opts) => {
 }
 
 jest.mock("axios");
+
 describe("Main", () => {
   afterEach(() => {
     jest.clearAllMocks();

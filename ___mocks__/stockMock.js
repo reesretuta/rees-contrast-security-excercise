@@ -17,7 +17,6 @@ const stockMock = {
     "DividendYield": "0",
     "EBITDA": "None",
     "EPS": "9.31",
-    "EPS-total": 9.31,
     "EVToEBITDA": "3.5808",
     "EVToRevenue": "1.0513",
     "ExDividendDate": "None",
