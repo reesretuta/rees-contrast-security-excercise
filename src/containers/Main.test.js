@@ -1,6 +1,6 @@
-import React from "react";
-import mockAxios from "axios";
-import { Main } from "./Main";
+import React from 'react';
+import mockAxios from 'axios';
+import { Main } from './Main';
 import enzyme, { mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 enzyme.configure({ adapter: new Adapter() });
@@ -16,17 +16,17 @@ const wrapperMount = (node, opts) => {
 
 jest.mock("axios");
 
-describe("Main", () => {
+describe('Main', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
 
-  it("should render successfully", () => {
+  it('should render successfully', () => {
     wrapperMount(<Main></Main>);
     expect(wrapper.find('Main').length).toEqual(1);
   });
 
-  it("should not load anything if empty", async () => {
+  it('should not load anything if empty', async () => {
     wrapperMount(<Main></Main>);
     expect(mockAxios.get).toHaveBeenCalledTimes(0);
   });

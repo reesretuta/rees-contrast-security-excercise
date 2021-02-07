@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { getTickerOverview, getTickerGlobal } from "../utils/api";
-import { addNewCard } from "../utils/util";
-import { Card } from "../components/Card";
-import { SearchTicker } from "../components/SearchTicker";
-import "./Main.scss";
+import React, { useState } from 'react';
+import { getTickerOverview, getTickerGlobal } from '../utils/api';
+import { addNewCard } from '../utils/util';
+import { Card } from '../components/Card';
+import { SearchTicker } from '../components/SearchTicker';
+import './Main.scss';
 
 export const Main = () => {
   let [cards, setCards] = useState([]);

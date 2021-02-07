@@ -1,10 +1,11 @@
-import React from "react";
-import "./Card.scss";
+import React from 'react';
+import './Card.scss';
 
 export const Card = ({ stock, deleteCard }) => {
   const eps = parseFloat(stock.stockData['EPS']);
   const epsTotal = parseFloat(stock.stockData['EPS-total']);
   const epsWidth = ((eps / epsTotal) * 100) + '%';
+
   return (
     <div className="card">
       <div className="deleteCard" onClick={ ()=> {
@@ -13,7 +14,6 @@ export const Card = ({ stock, deleteCard }) => {
         <span>&#10005;</span>
         <div>Remove</div>
       </div>
-
       <h1>{stock.stockData['Name']}</h1>
       <h2>Stats</h2>
         <div className="stat">

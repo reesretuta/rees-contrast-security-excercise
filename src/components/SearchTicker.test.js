@@ -1,10 +1,10 @@
-import mockAxios from "axios";
-import React from "react";
-import { SearchTicker } from "./SearchTicker";
+import mockAxios from 'axios';
+import React from 'react';
+import { SearchTicker } from './SearchTicker';
 import enzyme, { mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 enzyme.configure({ adapter: new Adapter() });
-import { act } from "react-dom/test-utils";
+import { act } from 'react-dom/test-utils';
 import { Search } from 'semantic-ui-react';
 
 jest.mock("axios", () => ({
@@ -31,19 +31,19 @@ const wrapperMount = (node, opts) => {
     return wrapper;
 }
 
-describe("SearchTicker", () => {
+describe('SearchTicker', () => {
     afterEach(() => {
         jest.clearAllMocks();
     });
 
-    it('loads the search component', ()=> {
+    it('should load the search component successfully', ()=> {
         let addCard = jest.fn();
         wrapperMount(<SearchTicker addCard={addCard} />);
         let search = wrapper.find('Search');
         expect(search.length).toEqual(1);
     });
 
-    it('initially empty search results', ()=> {
+    it('should initially be empty for search results', ()=> {
         let addCard = jest.fn();
         wrapperMount(<SearchTicker addCard={addCard} />);
         let search = wrapper.find('SearchResult');
@@ -61,8 +61,8 @@ describe("SearchTicker", () => {
     });
 });  
 
-describe("Search Component", () => {
-    it('renders results when results set is provided', () => {
+describe('Search Component', () => {
+    it('should render results when results set is provided', () => {
       const tickers = [
         { title: 'ticker1', description: 'desc1' },
         { title: 'ticker2', description: 'desc2' },

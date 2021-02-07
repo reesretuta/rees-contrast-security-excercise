@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { Search } from 'semantic-ui-react'
-import { getSimilarTickers } from "../utils/api";
+import { getSimilarTickers } from '../utils/api';
 
 export const SearchTicker = ({addCard}) => {
   const [tickers, setTickers] = useState([]);
