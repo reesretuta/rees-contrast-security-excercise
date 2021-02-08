@@ -22,6 +22,7 @@ export const Main = () => {
       alert(`No Data Found for ${ticker}`);
       return;
     }
+
     if(stockData.data['Note'] || stockGlobalData.data['Note']) {
       alert(stockGlobalData.data['Note']);
       return;
