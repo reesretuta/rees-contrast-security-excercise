@@ -1,11 +1,11 @@
 ### Setup
-npm install
+`npm install`
 
 ### Run the app
-npm start
+`npm start` and open localhost:3000
 
 ### Testing
-npm test
+`npm test` 
 
 ### Notes
 - Searching for "BA" will provide 3 working tickers can click: "Boeing Company" "Banro Corporation" and "Alibaba" so as to more easily stay below 5 requests per minute api threshold from alphavantage.co
